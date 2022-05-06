@@ -256,11 +256,11 @@ input,select{
 /* END HOME */
 
 /* START ROOM */
-#room .image{
+#rooms .image{
     position: relative;
     overflow: hidden;
 }
-#room .image::before{
+#rooms .image::before{
     position: absolute;
     content: '';
     top:0;
@@ -275,29 +275,29 @@ input,select{
     -o-transition: all 400ms ease-in 0s;
     opacity: 0;
 }
-#room .image img{
+#rooms .image img{
     width:100%;
     -webkit-transition: all 400ms ease-in 0s;
     transition: all 400ms ease-in 0s;
 }
-#room .image:hover img {
+#rooms .image:hover img {
     transform: scale3d(1.05,1.05,1.05);
     -webkit-transform: scale3d(1.05,1.05,1.05);
     -moz-transform: scale3d(1.05,1.05,1.05);
     -ms-transform: scale3d(1.05,1.05,1.05);
     -o-transform: scale3d(1.05,1.05,1.05);
 }
-#room .image:hover::before{
+#rooms .image:hover::before{
     opacity: 0.6;
 }
-#room .parent{
+#rooms .parent{
     position: absolute;
     top:0;
     left:0;
     padding:1.5rem 2rem;
     height: 100%;
 }
-#room .outlayer{
+#rooms .outlayer{
 border:2px solid var(--white-color);
 padding: 1rem;
 height: 100%;
@@ -311,76 +311,76 @@ flex-direction: column;
 opacity: 0;
 }
 
-#room .image:hover .outlayer{
+#rooms .image:hover .outlayer{
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
 }
 @media(max-width:1199px) and (min-width:767px){
-#room .outlayer h4{
+#rooms .outlayer h4{
     margin-top: 5px !important;
     margin-bottom: 10px !important;
     }
-    #room .outlayer p{
+    #rooms .outlayer p{
         font-size: .85rem;
     }
-    #room .outlayer .book_btn{
+    #rooms .outlayer .book_btn{
         margin-top: 5px !important;
     }
-    #room .parent{
+    #rooms .parent{
         padding: 1rem;
     }
 }
 
 @media(max-width:767px){
-    #room .image{
+    #rooms .image{
         margin-bottom: 1.5rem;
     }
-    #room .outlayer{
+    #rooms .outlayer{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    #room .parent{
+    #rooms .parent{
         padding: 4rem;
     }
 }
 @media(max-width:552px){
-    #room .image{
+    #rooms .image{
         margin-bottom: 1.5rem;
     }
-    #room .outlayer{
+    #rooms .outlayer{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    #room .outlayer h4{
+    #rooms .outlayer h4{
         margin-bottom: 10px !important;
     }
-    #room .outlayer .book_btn{
+    #rooms .outlayer .book_btn{
         margin-top: 0px !important;
     }
-    #room .parent{
+    #rooms .parent{
         padding: 1rem;
     }
 }
 @media(max-width:385px){
-    #room .outlayer h4{
+    #rooms .outlayer h4{
         margin-bottom: 10px !important;
         font-size: 1.2rem;
     }
-    #room .outlayer p{
+    #rooms .outlayer p{
         margin-bottom: 10px !important;
         font-size: .7rem;
     }
-    #room .outlayer span{
+    #rooms .outlayer span{
         margin-bottom: 10px !important;
         font-size: .7rem;
     }
-    #room .outlayer .book_btn{
+    #rooms .outlayer .book_btn{
         margin-top: 0px !important;
     }
-    #room .parent{
+    #rooms .parent{
         padding: 1rem;
     }
 }
