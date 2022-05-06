@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Website</title>
+    <!-- FAVE ICON -->
+    <link rel="ICON" href="../images/favicon.png">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:wght@400;600&family=Poppins:wght@100;200;300;400;500&family=Raleway:wght@500;600;700&family=Red+Hat+Mono:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@100;200;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100;300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:wght@400;600&family=Oswald:wght@200;300;400;500;600&family=Poppins:wght@100;200;300;400;500&family=Raleway:wght@500;600;700&family=Red+Hat+Mono:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@100;200;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <!-- SWIPER CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- BOOTSTRAP CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <!-- START NAVBAR -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg py-3 fixed-top nav-bar">
+            <div class="container">
+              <span class="navbar-brand" >
+                  <img src="../images/logo.png" class="img-fluid" alt="logo">
+              </span>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fa-solid fa-bars-staggered navbar-toggler-icon"></i>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav menu-navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rooms">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#price">Price</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                </ul>
+                <button class="book_btn">BOOK NOW</button>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- END NAVBAR -->
+
+    <!-- START HOME -->
+    <section class="p-0" id="home">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" style="background-image: url(../images/slider/slider2.webp)">
+                    <div class="slide-caption text-center">
+                        <div>
+                            <h1>welcome to hotel in Dubai</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url(../images/slider/slider1.webp)">
+                    <div class="slide-caption text-center">
+                        <div>
+                            <h1>welcome to hotel in Dubai</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                        </div>
+                    </div>
+               </div>
+              </div>
+              <div class="swiper-pagination"></div>
+        </div>
+        <div class="container booking_form">
+            <form class="row gap-3 gap-lg-0">
+                <div class="col-lg">
+                    <input type="date" name="start_date" class="form-control">
+                </div>
+                <div class="col-lg">
+                    <input type="date" name="end_date" class="form-control">
+                </div>
+                <div class="col-lg">
+                    <select name="adult" id="adult" class="form-select">
+                        <option value="adult">ADULTS</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div class="col-lg">
+                    <select name="child" id="child" class="form-select">
+                        <option value="children">CHELDREN</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div class="col-lg submit_btn">
+                    <button type="submit" class="book_btn rounded-2 px-lg-2 px-4">CHECK AVAILABILITY</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- END HOME -->
+
+    <!-- START ABOUT -->
+    <section class="p-5" id="about">
+        <div class="container">
+            <div class="row about">
+                <div class="col-lg-6">
+                    <h3 class="mb-3">Welcome to <span>Hotel<br> the haven</span> of your weekend</h3>
+                    <p class="mb-3">lorum luptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius</p>
+                    <p class="mb-3">lorum luptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem</p>
+                    <div class="explore">
+                    <a class="book_btn mt-4">EXPLORE</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 img">
+                    <img src="../images/about-img.svg" class="img-fluid mx-lg-5" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END ABOUT -->
+
+    <!-- START ROOMS -->
+    <section class="p-5" id="room">
+            <h6 class="text-center">WHAT I CAN DO FOR YOU</h6>
+            <h2 class="text-center mb-5">Our Favorite Rooms</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="image">
+                        <img src="../images/room/room1.webp" class="img-fluid" alt="">
+                        <div class="parent">
+                            <div class=" outlayer">
+                                <h4 class="mb-lg-5 mt-lg-5 mb-sm-0 mt-sm-1">Royal Suit</h4>
+                                <p>Discover five of our favourite dresses from our new collection that are destined to be worn and loved immediately</p>
+                                <span class="d-block mb-4  mb-sm-1">$220 / Per Night</span>
+                                <button type="submit" class="book_btn mt-4 text-white border-white">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="image">
+                        <img src="../images/room/room2.webp" class="img-fluid" alt="">
+                        <div class="parent">
+                            <div class=" outlayer">
+                                <h4 class="mb-lg-5 mt-lg-5  mb-sm-0 mt-sm-1">Royal Suit</h4>
+                                <p>Discover five of our favourite dresses from our new collection that are destined to be worn and loved immediately</p>
+                                <span class="d-block mb-4 mb-sm-1">$220 / Per Night</span>
+                                <button type="submit" class="book_btn mt-4 text-white border-white">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="image">
+                        <img src="../images/room/room3.webp" class="img-fluid" alt="">
+                        <div class="parent">
+                            <div class=" outlayer">
+                                <h4 class="mb-lg-5 mt-lg-5 mt-sm-1">Royal Suit</h4>
+                                <p>Discover five of our favourite dresses from our new collection that are destined to be worn and loved immediately</p>
+                                <span class="d-block mb-4">$220 / Per Night</span>
+                                <button type="submit" class="book_btn mt-4 text-white border-white">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- END ROOMS -->
+
+    <!-- START SERVICES -->
+    <section class="py-5 services" id="services">
+        <div class="container">
+            <h6 class="text-center">WE ARE HERE FOR YOU</h6>
+            <h2 class="text-center mb-5">Our Awesome Services</h2>
+
+            <div class="row services-item">
+                <div class="col service-img">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="spa" role="tabpanel">
+                            <img src="../images/services/service1.webp" alt="">
+                        </div>
+                        <div class="tab-pane fade" id="resturant" role="tabpanel">
+                            <img src="../images/services/service2.webp" alt="" >
+                        </div>
+                        <div class="tab-pane fade" id="pool" role="tabpanel">
+                            <img src="../images/services/service3.webp" alt="">
+                        </div>
+                        <div class="tab-pane fade" id="conferance" role="tabpanel">
+                            <img src="../images/services/service6.webp" alt="">
+                            
+                        </div>
+                      </div>
+                </div>
+                <div class="col list-items">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li>
+                          <a class="active" data-bs-toggle="tab" href="#spa">
+                              <span class="service-icon">
+                                  <img src="../images/services/service-icon1.webp" alt="">
+                              </span>
+                              <div>
+                                <h4>Spa, beauty & Health</h4>
+                                <p><span> Spa and beauty</span> luptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</p>
+                              </div>     
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#resturant" data-bs-toggle="tab">
+                              <span class="service-icon">
+                                <img src="../images/services/service-icon2.webp" alt="">
+                              </span>
+                              <div>
+                                <h4>Restaurant</h4>
+                                <p><span>Restaurant</span> lup provide grro tatem quia voluptas sit aspernatur aut
+                                  odit aut fugit,</p>
+                              </div>   
+                          </a>
+                        </li>
+                        <li>
+                          <a data-bs-toggle="tab" href="#pool" >
+                              <span class="service-icon">
+                                <img src="../images/services/service-icon3.webp" alt="">
+                              </span>
+                              <div>
+                                <h4>Swimming Pool</h4>
+                                <p><span>Swimming</span> pool luptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</p>
+                              </div>
+                           
+                            </a>
+                        </li>
+                        <li>
+                            <a  data-bs-toggle="tab" href="#conferance" >
+                                <span class="service-icon">
+                                    <img src="../images/services/service-icon4.webp" alt="">
+                                </span>
+                                <div>
+                                    <h4>Conference Hall</h4>
+                                    <p><span>Conference</span> luptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</p>
+                                </div> 
+                              </a>
+                          </li>
+                      </ul>
+                </div>
+            </div>
+        </div>
+        <div class="counter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h2>
+                            <span class="count1">1589</span>+
+                        </h2>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h2>
+                            <span class="count2">2365</span>+
+                        </h2>
+                        <p>New Friendships</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h2>
+                            <span class="count3">548</span>+
+                        </h2>
+                        <p>Five Start Ratings</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h2>
+                            <span class="count4">687</span>+
+                        </h2>
+                        <p>Served Breakfast</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SERVICES -->
+
+    <!-- START STAFF -->
+    <section class="p-5 team mb-5" id="team">
+        <div class="container">
+            <h6 class="text-center">WHAT I CAN DO FOR YOU</h6>
+            <h2 class="text-center mb-5">Our Special Staff</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="member">
+                        <img src="../images/team/team1.webp" alt="" class="img-fluid">
+                        <div class="team-info">
+                            <h4>Shirley Gibson</h4>
+                            <p>Manager</p>
+                        <ul class="social-network">
+                            <li><a href="#"><i class="fab fa-facebook-f face"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                        </ul>
+                        </div>            
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member">
+                            <img src="../images/team/team2.webp" alt="" class="img-fluid">
+                            <div class="team-info">
+                                <h4>Ronald Long</h4>
+                                <p>Chif Reciption Officer</p>
+                            <ul class="social-network">
+                                <li><a href="#"><i class="fab fa-facebook-f face"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                            </ul>
+                            </div>      
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="member">
+                                <img src="../images/team/team3.webp" alt="" class="img-fluid">
+                                <div class="team-info">
+                                    <h4>Ashley Sanchez</h4>
+                                    <p>Master Chef</p>
+                                <ul class="social-network">
+                                    <li><a href="#"><i class="fab fa-facebook-f face"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                                </ul>
+                                </div>
+                                  
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="member">
+                                    <img src="../images/team/team4.webp" alt="" class="img-fluid">
+                                    <div class="team-info">
+                                        <h4>Jessica Watson</h4>
+                                        <p>Housekeeping</p>
+                                    <ul class="social-network">
+                                        <li><a href="#"><i class="fab fa-facebook-f face"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                                    </ul>
+                                    </div>
+                                      
+                                    </div>
+                                </div>
+                </div>
+        </div>
+    </section>
+    <!-- END STAFF -->
+
+
+    <!-- START GALLARY -->
+    <section class="gallery p-5" id="gallery">
+        <div class="container">
+            <h6 class="text-center">BEST PICTURES OF OUR HOTEL</h6>
+            <h2 class="text-center mb-5">Our Gallery</h2>
+            <div class="row g-0">
+                <div class="col-lg-3 col-md-6 gallary-item">
+                    <img src="../images/gallery/1.webp" alt="" class="img-fluid w-100">
+                    <div class="item-content"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 gallary-item">
+                    <img src="../images/gallery/2.webp" alt="" class="img-fluid w-100">
+                    <div class="item-content"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 gallary-item">
+                    <img src="../images/gallery/3.webp" alt="" class="img-fluid w-100">
+                    <div class="item-content"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 gallary-item">
+                    <img src="../images/gallery/4.webp" alt="" class="img-fluid w-100">
+                    <div class="item-content"></div>
+                </div>
+                <div class="col-md-6 gallary-item">
+                    <img src="../images/gallery/5.webp" alt="" class="img-fluid w-100">
+                    <div class="item-content"></div>
+                </div>
+                <div class="col-md-6 gallary-item">
+                    <img src="../images/gallery/6.webp" alt="" class="img-fluid w-100">
+                    <div class="item-content"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END GALLARY -->
+
+    <!--START PRICE  -->
+    <section class="price p-5" id="price">
+        <div class="container">
+            <h6 class="text-center">BEST & AFFORDABLE PRICE FOR YOU</h6>
+            <h2 class="text-center mb-5">Our Pricing</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="card p-4">
+                        <h4 class="card-title">Economic</h4>
+                        <p>Flight Ticket(2) <br>Music Concert (30% Off) <br>Restaurant (Snacks) <br>Face Make(No)</p>
+                        <h3>$150 <sub>/NIGHT</sub> </h3>
+                        <button class="book_btn d-inline">SIGN UP</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="card p-4">
+                        <h4 class="card-title">Economic</h4>
+                        <p>Flight Ticket(2) <br>Music Concert (30% Off) <br>Restaurant (Snacks) <br>Face Make(No)</p>
+                        <h3>$150 <sub>/NIGHT</sub> </h3>
+                        <button class="book_btn d-inline">SIGN UP</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="card p-4">
+                        <h4 class="card-title">Economic</h4>
+                        <p>Flight Ticket(2) <br>Music Concert (30% Off) <br>Restaurant (Snacks) <br>Face Make(No)</p>
+                        <h3>$150 <sub>/NIGHT</sub> </h3>
+                        <button class="book_btn d-inline">SIGN UP</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="card p-4">
+                        <h4 class="card-title">Economic</h4>
+                        <p>Flight Ticket(2) <br>Music Concert (30% Off) <br>Restaurant (Snacks) <br>Face Make(No)</p>
+                        <h3>$150 <sub>/NIGHT</sub> </h3>
+                        <button class="book_btn d-inline">SIGN UP</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END PRICE  -->
+
+    <!--START BLOG  -->
+    <section class="blog p-5" id="blog">
+        <div class="container">
+            <h6 class="text-center">SAY HELLO TO OUR VISITERS</h6>
+            <h2 class="text-center mb-5">Our Blog</h2>
+            <div class="row g-4">
+                <div class="col-md-6 ">
+                    <div class="blog-content">
+                        <img src="../images/blog/blog1.webp" alt="" class="img-fluid">
+                        <div class="card">
+                            <h4>Relax Zone</h4>
+                            <span>BY ADMIN - FEBRUARY 18, 2018</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, nostrum.</p>
+                            <button class="book_btn d-inline">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="blog-content">
+                        <img src="../images/blog/blog2.webp" alt="" class="img-fluid">
+                        <div class="card">
+                            <h4>Relax Zone</h4>
+                            <span>BY ADMIN - FEBRUARY 18, 2018</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, nostrum.</p>
+                            <button class="book_btn d-inline">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END BLOG  -->
+
+    <!-- START SPONSER -->
+    <section class="sponser p-5">
+        <div class="our-partner-slider mt-5">
+            <div class="container swiper our-partner">
+                <div class=" swiper-wrapper">
+                    <div class="swiper-slide"><img src="../images/partners/brand1.webp"></div>
+                    <div class="swiper-slide"><img src="../images/partners/brand2.webp"></div>
+                    <div class="swiper-slide"><img src="../images/partners/brand3.webp"></div>
+                    <div class="swiper-slide"><img src="../images/partners/brand4.webp"></div>
+                    <div class="swiper-slide"><img src="../images/partners/brand5.webp"></div>
+                    <div class="swiper-slide"><img src="../images/partners/brand6.webp"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SPONSER -->
+
+    <!-- START FOOTER  -->
+    <footer class="p-5 bg-black">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-6">
+                    <h4>Hotel Location</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim erat ut laoreet pharetra....</p>
+                    <div class="contact-info">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-home me-3"></i> No. 96, South City, London</a></li>
+                            <li><a href="#"><i class="fa fa-phone me-3"></i>+1 222 3333</a></li>
+                            <li><a href="#"><i class="fa fa-envelope me-3"></i>info@example.com</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4>More Links</h4>
+                    <ul class="links p-0">
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>About Us</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Our Office</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Delivery</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Our Store</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Guarantee</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Buy Gift Card</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4>Demo Links</h4>
+                    <ul class="links p-0">
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>About Us</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Our Office</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Delivery</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Our Store</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Guarantee</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Buy Gift Card</a></li>
+                        <li><a href="#"><i class="fa-solid fa-angle-right"></i>Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4>Newsletter</h4>
+                    <input type="text" class="form-control mt-2 d-inline-block bg-transparent" placeholder="Enter Your Email Here">
+                    <button class="btn text-white bg-transparent book_btn mt-3 rounded-1 border-white">SUBSCRIBE</button>
+                    <h3 class="mt-3">Stay Connected</h3>
+                    <ul class="social-network bg-transparent px-0">
+                        <li><a href="#"><i class="fab fa-facebook-f face"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                    </ul>
+
+                </div>   
+            </div>
+        </div>
+    </footer>
+    <div class="copy-right text-center">
+        Copyright <span>Â© CODE4EDUCATION.</span> All Rights Reserved
+    </div>
+    <!-- END FOOTER  -->
+
+
+
+
+
+
+    <!-- SWIPER JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- BOOTSTRAP JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- JS FILE -->
+    <script src="../JS/main.js"></script>
+</body>
+</html>
